@@ -9,6 +9,7 @@ gulp.task('watch', function(){
 		// notify: false,  // disables browser sync inject notification!
 		server: {
 			baseDir: 'app'
+			// ,index: 'app.html' if there is file not named index.html
 		}
 	})
 
@@ -27,7 +28,7 @@ gulp.task('watch', function(){
 });
 
 gulp.task('cssInject', ['styles'], function(){
-	return gulp.src('./app/temp/styles/app.css')
+	return gulp.src('./app/temp/styles/styles.css')
 		.pipe(browserSync.stream());
 })
 

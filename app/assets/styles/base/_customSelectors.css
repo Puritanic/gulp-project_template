@@ -1,0 +1,26 @@
+/*The custom selector is a pseudo-class, so you must use :-- to define it.*/
+
+@custom-selector :--heading h1, h2, h3, h4, h5, h6;
+
+/* Usage:
+
+ :--heading{
+  margin-top: 0;
+}
+
+*/
+
+@custom-selector :--any-link :link, :visited;
+
+/*
+a:--any-link {
+  color: blue;
+}
+
+output:
+
+a:link,
+a:visited {
+  color: blue;
+}
+*/

@@ -1,0 +1,18 @@
+/*@custom-media --small-viewport (max-width: 30em);
+
+@media (--small-viewport) {
+   styles for small viewport 
+}
+you will get:
+
+@media (max-width: 30em) {
+ 	styles for small viewport
+}*/
+
+
+{
+  '--phone': '(min-width: 544px)',
+  '--tablet': '(min-width: 768px)',
+  '--desktop': '(min-width: 992px)',
+  '--large-desktop': '(min-width: 1200px)',
+}

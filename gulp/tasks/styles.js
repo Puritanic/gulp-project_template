@@ -9,7 +9,7 @@ var gulp 		 = require('gulp'),
 
 gulp.task('styles', function(){
 	// we return this task because gulp.src is async function
-	return gulp.src('./app/assets/styles/app.css')
+	return gulp.src('./app/assets/styles/styles.css')
 		.pipe(postcss([
 			precss(),
 			animation(),

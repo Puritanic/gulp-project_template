@@ -1,0 +1,41 @@
+/* before */
+
+/*$dir: assets/icons;
+
+@each $icon in (foo, bar, baz) {
+	.icon-$icon {
+		background: url('$dir/$icon.png');
+	}
+}
+
+@for $index from 1 to 5 by 2 {
+	.col-$index {
+		width: $(index)0%;
+	}
+}*/
+
+/* after */
+/*
+.icon-foo {
+	background: url('assets/icons/foo.png');
+}
+
+.icon-bar {
+	background: url('assets/icons/bar.png');
+}
+
+.icon-baz {
+	background: url('assets/icons/baz.png');
+}
+
+.col-1 {
+	width: 10%;
+}
+
+.col-3 {
+	width: 30%;
+}
+
+.col-5 {
+	width: 50%;
+}*/
